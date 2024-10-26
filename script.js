@@ -58,10 +58,10 @@ function generatePDF() {
             // Logo aligned to the right
             doc.addImage(logoDataURL, "PNG", 2.8, 0.2, 1.2, 0.6);
 
-            // Set font size to 9 for compactness
-            doc.setFontSize(9);
+            // Set font size for compactness
+            doc.setFontSize(8);
 
-            // "From Details" Section
+            // "Sender Details" Section
             doc.text("From Details:", 0.2, 0.7);
             doc.text(`Customer Code: ${customerCode}`, 0.2, 0.9);
             doc.text(`Name: ${consignorName}`, 0.2, 1.1);
@@ -97,6 +97,9 @@ function generatePDF() {
 
             // Separator line
             doc.line(0.2, 4.2, 3.8, 4.2);
+
+            // Set font size 
+            doc.setFontSize(10);
 
             // Consignee Details Section (Empty Fields for now)
             doc.text("Consignee Details:", 0.2, 4.5);
