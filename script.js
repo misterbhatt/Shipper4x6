@@ -102,7 +102,7 @@ function generatePDF() {
             doc.setFontSize(10);
 
             // Consignee Details Section (Empty Fields for now)
-            doc.text("Consignee Details:", 0.2, 4.5);
+            doc.text("Consignee/Receiver Details:", 0.2, 4.5);
             doc.text("Name:", 0.2, 4.7);
             doc.text("Address Line 1:", 0.2, 4.9);
             doc.text("Address Line 2:", 0.2, 5.1);
