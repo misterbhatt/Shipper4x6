@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Label Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shipping Label Generator</h1>
+        
+        <!-- Upload Logo -->
+        <label for="logoUpload">Upload Logo:</label>
+        <input type="file" id="logoUpload" accept="image/*">
+        
+        <!-- Download Sample File -->
+        <button id="downloadSample">Download Sample File</button>
+        
+        <!-- File Upload for Excel -->
+        <input type="file" id="excelUpload" accept=".xlsx">
+        
+        <!-- Generate PDF Button -->
+        <button id="generatePDF">Generate PDF</button>
+        
+        <!-- Preview Area -->
+        <div id="preview"></div>
+    </div>
+
+    <!-- Import Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
